@@ -20,6 +20,7 @@ namespace AppPractica3.Views
         public Login()
         {
             InitializeComponent();
+            image.Source = ImageSource.FromResource("AppPractica3.imagen.logo.jpg");
         }
 
         private async void IniciarSesion_ClickedAsync(object sender, EventArgs e)
@@ -30,7 +31,7 @@ namespace AppPractica3.Views
 
             if (login.Username != null && login.Password != null)
             {
-                if (login.Username == "admin" && login.Password == "123")
+                if (login.Username == "admin@uteco.edu.do" && login.Password == "Password")
                 {
                     if (usePass.Text.Length >= 2)
                     {

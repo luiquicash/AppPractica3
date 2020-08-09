@@ -8,13 +8,13 @@
              x:Class="AppPractica3.Views.Menu">
     <ContentPage.Content>
             <StackLayout>
-            <Button Text="inicio" x:Name="btninicio" Clicked="btninicio_Clicked" 
+            <Button Text="inicio" x:Name="btnini" Clicked="btnini_Clicked" 
                     BackgroundColor="White" BorderColor="White" TextColor="Black" FontAttributes="Bold" FontSize="Small" />
                 
-                <Button Text="Informacion Personal" x:Name="btninfoPer" Clicked="btninfoPer_Clicked" 
+                <Button Text="Informacion Personal" x:Name="btninfoPe" Clicked="btninfoPe_Clicked" 
                     BackgroundColor="White" BorderColor="White" TextColor="Black" FontAttributes="Bold" FontSize="Small"/>
 
-                <Button Text="Lista de Tareas Pendientes" x:Name="bTareaPen" Clicked="bTareaPen_Clicked" 
+            <Button Text="Lista de Tareas Pendientes" x:Name="bnTarPen" Clicked="bnTarPen_Clicked" 
                     BackgroundColor="White" BorderColor="White" TextColor="Black" FontAttributes="Bold" FontSize="Small" />
                 
             </StackLayout>
