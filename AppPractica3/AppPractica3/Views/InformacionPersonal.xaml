@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="{Binding Title}"
+             x:Class="AppPractica3.Views.InformacionPersonal">
+    
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="Nombre" FontSize="Small" Margin="0,20,0,0"/>
+            <Entry Placeholder="Introduzca Su Nombre Completo" x:Name="txtNombre" FontSize="Micro"/>
+            
+            <Label Text="Cedula" FontSize="Small" Margin="0,10,0,0"/>
+            <Entry Placeholder="Introduzca Su Cedula" x:Name="txtCedula" FontSize="Micro"/>
+
+            <Label Text="Telefono" FontSize="Small" Margin="0,10,0,0"/>
+            <Entry Placeholder="Introduzca Su Telefono" x:Name="txtTelefono" FontSize="Micro"/>
+
+            <Label Text="Correo Electronico" FontSize="Small" Margin="0,10,0,0"/>
+            <Entry Placeholder="Introduzca Su Correo Electronico" x:Name="txtCorreo" FontSize="Micro"/>
+
+            <Label Text="Direccion" FontSize="Small" Margin="0,10,0,0"/>
+            <Entry Placeholder="Introduzca Su Direccion" x:Name="txtDireccion" FontSize="Micro"/>
+
+            <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked" Margin="0,10,0,0"
+                    BackgroundColor="LightGreen" FontSize="Micro" WidthRequest="70" HeightRequest="35" HorizontalOptions="Start"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppPractica3.Views.Login">
+    <ContentPage.Content>
+        <StackLayout Padding="25" HorizontalOptions="CenterAndExpand" Margin="0,50,0,0">
+          
+            <Label Text="Iniciar Sesion" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Center" Margin="25"/>
+            <Label x:Name="user" Text="Usuario" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="useName" Placeholder="Ingrese su Nombre de Usuario" FontSize="10" HorizontalTextAlignment="Center"/>
+            <Label x:Name="pass" Text="Contraseña" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="usePass" IsPassword="true" Placeholder="Ingrese su Contraseña" FontSize="10" HorizontalTextAlignment="Center"/>
+
+            <Button BackgroundColor="Blue" TextColor="White" HeightRequest="35" Text="Iniciar Sesion" FontSize="12" CornerRadius="15" x:Name="IniciarSesion" Clicked="IniciarSesion_ClickedAsync"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
