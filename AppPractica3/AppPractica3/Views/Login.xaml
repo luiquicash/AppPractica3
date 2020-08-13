@@ -8,9 +8,8 @@
     <ContentPage.Content>
         <StackLayout Padding="25" HorizontalOptions="CenterAndExpand" Margin="0,50,0,0">
             <StackLayout
-            Padding="0,10,0,0"  
-            HorizontalOptions="CenterAndExpand"
-            VerticalOptions="CenterAndExpand">
+            Padding="0,20,0,0"  
+            HorizontalOptions="CenterAndExpand">
                 <!--  IMAGEN  -->
                 <Image x:Name="image" WidthRequest="50"/>
             </StackLayout>
