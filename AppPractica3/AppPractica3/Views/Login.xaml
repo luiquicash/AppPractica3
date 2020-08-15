@@ -6,12 +6,10 @@
              mc:Ignorable="d"
              x:Class="AppPractica3.Views.Login">
     <ContentPage.Content>
-        <StackLayout Padding="25" HorizontalOptions="CenterAndExpand" Margin="0,50,0,0">
+        <StackLayout Padding="25" Margin="0,50,0,0">
             <StackLayout
-            Padding="0,20,0,0"  
             HorizontalOptions="CenterAndExpand">
-                <!--  IMAGEN  -->
-                <Image x:Name="image" WidthRequest="50"/>
+                <Image WidthRequest="100" HeightRequest="100" Source="logo.png"/>
             </StackLayout>
 
             <Label Text="Iniciar Sesion" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Center" Margin="25"/>

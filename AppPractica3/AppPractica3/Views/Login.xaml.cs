@@ -20,7 +20,6 @@ namespace AppPractica3.Views
         public Login()
         {
             InitializeComponent();
-            image.Source = ImageSource.FromResource("AppPractica3.imagen.logo.jpg");
         }
 
         private async void IniciarSesion_ClickedAsync(object sender, EventArgs e)

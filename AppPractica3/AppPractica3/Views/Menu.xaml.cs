@@ -6,7 +6,7 @@ using Xamarin.Forms.Xaml;
 namespace AppPractica3.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Menu : MasterDetailPage
+    public partial class Menu : ContentPage
     {
         public Menu()
         {
