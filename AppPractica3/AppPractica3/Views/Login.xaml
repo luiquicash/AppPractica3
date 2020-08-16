@@ -12,13 +12,14 @@
                 <Image WidthRequest="100" HeightRequest="100" Source="logo.png"/>
             </StackLayout>
 
-            <Label Text="Iniciar Sesion" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Center" Margin="25"/>
-            <Label x:Name="user" Text="Usuario" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-            <Entry x:Name="useName" Placeholder="Ingrese su Nombre de Usuario" FontSize="Small" HorizontalTextAlignment="Center"/>
-            <Label x:Name="pass" Text="Contraseña" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-            <Entry x:Name="usePass" IsPassword="true" Placeholder="Ingrese su Contraseña" FontSize="Small" HorizontalTextAlignment="Center"/>
-
-            <Button BackgroundColor="Blue" TextColor="White" HeightRequest="35"  FontSize="12" CornerRadius="15" Text="Iniciar Sesion" x:Name="IniciarSesion" Clicked="IniciarSesion_ClickedAsync"/>
+            <StackLayout Orientation="Vertical" Padding="0,15,0,15">
+                <Label Text="Iniciar Sesion" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Center" Margin="25"/>
+                <Label x:Name="user" Text="Usuario" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                <Entry x:Name="useName" Placeholder="Ingrese su Nombre de Usuario" FontSize="Small" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand"/>
+                <Label x:Name="pass" Text="Contraseña" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                <Entry x:Name="usePass" IsPassword="true" Placeholder="Ingrese su Contraseña" FontSize="Small" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand"/>
+                <Button BackgroundColor="Blue" TextColor="White"  HeightRequest="35" FontSize="12" CornerRadius="15" Text="Iniciar Sesion" x:Name="IniciarSesion" Clicked="IniciarSesion_ClickedAsync"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

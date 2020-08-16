@@ -30,7 +30,7 @@ namespace AppPractica3.Views
 
             if (login.Username != null && login.Password != null)
             {
-                if (login.Username == "admin@uteco.edu.do" && login.Password == "Password")
+                if (login.Username.ToLower() == "admin@uteco.edu.do" && login.Password == "Password")
                 {
                     if (usePass.Text.Length >= 2)
                     {

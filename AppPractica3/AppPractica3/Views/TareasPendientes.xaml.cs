@@ -27,8 +27,7 @@ namespace AppPractica3.Views
             InitializeComponent();
 
             List<Tareas> listatareas = new List<Tareas>();
-
-            Tareas tarea = new Tareas
+            listatareas.Add(new Tareas
             {
                 id = 1,
                 titulo = "Terminar Sistema Prestamos",
@@ -36,10 +35,9 @@ namespace AppPractica3.Views
                 descripcion = "Faltan los puntos visuales y afinar el pago de las cuotas",
                 fecha = "8/9/2020",
                 completada = false
-            };
-            listatareas.Add(tarea);
+            });
 
-            Tareas tarea1 = new Tareas
+            listatareas.Add(new Tareas
             {
                 id = 2,
                 titulo = "Ir al taller",
@@ -47,10 +45,9 @@ namespace AppPractica3.Views
                 descripcion = "Revisar Precio de la parrilla delantera",
                 fecha = "8/10/2020",
                 completada = true
-            };          
-            listatareas.Add(tarea1);
+            });
 
-            Tareas tarea2 = new Tareas
+            listatareas.Add(new Tareas
             {
                 id = 3,
                 titulo = "Comprar disco externo",
@@ -58,10 +55,9 @@ namespace AppPractica3.Views
                 descripcion = "para liberar espacio en disco de mi pc",
                 fecha = "8/15/2020",
                 completada = false
-            };
-            listatareas.Add(tarea2);
+            });
 
-            Tareas tarea3 = new Tareas
+            listatareas.Add(new Tareas
             {
                 id = 4,
                 titulo = "Ir a la veterinaria",
@@ -69,10 +65,9 @@ namespace AppPractica3.Views
                 descripcion = "Chequeo mensual de mi perro",
                 fecha = "8/20/2020",
                 completada = false
-            };            
-            listatareas.Add(tarea3);
+            });
 
-            Tareas tarea4 = new Tareas
+            listatareas.Add(new Tareas
             {
                 id = 5,
                 titulo = "Practica de Basquet",
@@ -80,9 +75,8 @@ namespace AppPractica3.Views
                 descripcion = "ir a la cancha para practicar movimientos de bola",
                 fecha = "8/22/2020",
                 completada = false
-            };
-            listatareas.Add(tarea4);
-           
+            });
+
             tareasPendientes.ItemsSource = listatareas;
         }
 
